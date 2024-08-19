@@ -65,7 +65,7 @@ export default function Home() {
                     width={200}
                     height={200} />
                   <h3 className="text-xl font-bold text-center">Bamusarq Recreation and Wellness Center</h3>
-                  <p className="text-zinc-600 text-center text-lg font-bold p-2 m-3">A center that provides Recreational Services (Fun, Gym)e.t.c</p>
+                  <p className="text-zinc-600 text-center text-lg font-bold p-5 ">A center that provides Recreational Services</p>
                 </li>
               </div>
 
