@@ -36,7 +36,7 @@ export default function Home() {
             <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
               <div href='' className="w-2/3">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
-                  <Image src="/jttea.jpg.png"
+                  <Image src="/jttea.jpg"
                     alt=""
                     width={200}
                     height={200} />
@@ -46,7 +46,7 @@ export default function Home() {
               </div>
               <div href='' className="w-2/3">
                 <li className=" flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
-                  <Image src="/affordable.jpg.png"
+                  <Image src="/affordable.jpg"
                     alt=""
                     width={200}
                     height={200} />
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
               <div href='' className="w-2/3">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
-                  <Image src="/recreation.png"
+                  <Image src="/recreation.jpg"
                     alt=""
                     width={200}
                     height={200} />
