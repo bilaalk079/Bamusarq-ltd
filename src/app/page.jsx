@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main>
+      <head>
+        <link rel="shortcut icon" href="" />
+      </head>
       <section className="min-h-screen bg-slate-50 dark:bg-black dark:text-white ">
         <Header />
         <section className="max-w-5xl mx-auto ">
@@ -33,7 +36,7 @@ export default function Home() {
             <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
               <div href='' className="w-2/3">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
-                  <Image src="/ride.png"
+                  <Image src="/jttea.jpg.png"
                     alt=""
                     width={200}
                     height={200} />
@@ -43,17 +46,17 @@ export default function Home() {
               </div>
               <div href='' className="w-2/3">
                 <li className=" flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
-                  <Image src="/ride.png"
+                  <Image src="/affordable.jpg.png"
                     alt=""
                     width={200}
                     height={200} />
-                  <h3 className="text-3xl font-bold text-center">JT Fish</h3>
-                  <p className="text-zinc-600 text-center font-bold p-5">A Fish industry that produces Smoked fish, and also sells Fresh Fish</p>
+                  <h3 className="text-3xl font-bold text-center">Affordable Water</h3>
+                  <p className="text-zinc-600 text-center font-bold p-5">A well-treated drinking water</p>
                 </li>
               </div>
               <div href='' className="w-2/3">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
-                  <Image src="/ride.png"
+                  <Image src="/recreation.png"
                     alt=""
                     width={200}
                     height={200} />
