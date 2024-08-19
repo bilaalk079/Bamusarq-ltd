@@ -17,7 +17,8 @@ export default function Home() {
                 Check us out and see the difference
               </p>
             </article>
-            <Image src="/dab.png"
+            <Image src="/logo.png"
+             
               alt="dab"
               width={400}
               height={400}
@@ -37,6 +38,7 @@ export default function Home() {
               <div href='' className="w-2/3">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
                   <Image src="/jttea.jpg"
+                    className="rounded-2xl m-3"
                     alt=""
                     width={200}
                     height={200} />
@@ -47,6 +49,7 @@ export default function Home() {
               <div href='' className="w-2/3">
                 <li className=" flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
                   <Image src="/affordable.jpg"
+                    className="rounded-2xl m-3"
                     alt=""
                     width={200}
                     height={200} />
@@ -57,6 +60,7 @@ export default function Home() {
               <div href='' className="w-2/3">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
                   <Image src="/recreation.jpg"
+                    className="rounded-2xl m-3"
                     alt=""
                     width={200}
                     height={200} />
