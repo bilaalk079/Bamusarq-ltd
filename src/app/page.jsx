@@ -17,7 +17,7 @@ export default function Home() {
                 Check us out and see the difference
               </p>
             </article>
-            <Image src="/logo.png"
+            <Image src="/logo.jpg"
              
               alt="dab"
               width={400}
@@ -64,8 +64,8 @@ export default function Home() {
                     alt=""
                     width={200}
                     height={200} />
-                  <h3 className="text-2xl font-bold text-center">Bamusarq Recreation and Wellness Center</h3>
-                  <p className="text-zinc-600 text-center font-bold p-2">A center that provides Recreational Services (Fun, Gym)e.t.c</p>
+                  <h3 className="text-xl font-bold text-center">Bamusarq Recreation and Wellness Center</h3>
+                  <p className="text-zinc-600 text-center text-lg font-bold p-2">A center that provides Recreational Services (Fun, Gym)e.t.c</p>
                 </li>
               </div>
 
