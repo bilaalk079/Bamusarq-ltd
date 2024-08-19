@@ -35,7 +35,7 @@ export default function Home() {
               Our Solutions
             </h2>
             <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-              <div href='' className="w-2/3">
+              <div  className="w-2/3">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
                   <Image src="/jttea.jpg"
                     className="rounded-2xl m-3"
@@ -46,7 +46,7 @@ export default function Home() {
                   <p className="text-zinc-600 p-5 text-center font-bold">A herbal tea that boosts immunity</p>
                 </li>
               </div>
-              <div href='' className="w-2/3">
+              <div className="w-2/3">
                 <li className=" flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
                   <Image src="/affordable.jpg"
                     className="rounded-2xl m-3"
@@ -57,7 +57,7 @@ export default function Home() {
                   <p className="text-zinc-600 text-center font-bold p-5">A well-treated drinking water</p>
                 </li>
               </div>
-              <div href='' className="w-2/3">
+              <div className="w-2/3 h-auto">
                 <li className="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-400 py-6 px-2 rounded-3xl shadow-xl cursor-pointer md:h-96 hover:opacity-50">
                   <Image src="/recreation.jpg"
                     className="rounded-2xl m-3"
