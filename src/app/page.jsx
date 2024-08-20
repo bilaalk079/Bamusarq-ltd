@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <head>
-        <link rel="shortcut icon" href="" />
+        <link rel="shortcut icon" href="/logo.jpg" />
       </head>
       <section className="min-h-screen bg-slate-50 dark:bg-black dark:text-white ">
         <Header />
