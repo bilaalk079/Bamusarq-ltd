@@ -1,73 +1,77 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const mobileMenuRef = useRef(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
   const closeMobileMenu = () => {
-    setMobileMenuOpen(false);
+    setIsMobileMenuOpen(false);
   };
+
   return (
-    <header className="bg-green-600 text-white sticky top-0 z-10">
-      <section className="max-w-7xl mx-auto p-4 flex justify-between items-center">
-        <h1 className="text-3xl font-medium">
-          <a href="#hero">Bamusarq Solutions Ltd.</a>
+    <header className="bg-gray-800 text-white sticky top-0 z-10">
+      <div className="max-w-6xl mx-auto p-4 flex justify-between items-center">
+        <h1 className="text-xl sm:text-3xl font-medium">
+          <Link href="#hero" className="text-green-500">
+            Bamusarq Solutions ltd.
+          </Link>
         </h1>
-        <div>
+        <div className="md:hidden">
           <button
-            className="text-3xl md:hidden focus:outline-none"
+            className="text-3xl focus:outline-none text-green-700 hover:text-green-500"
             onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
           >
-            &#9776;
+            {isMobileMenuOpen ? <>&times;</> : <>&#9776;</>}
           </button>
-          <nav className="hidden md:flex gap-8 text-xl" aria-label="main">
-            <a href="#about" className="hover:opacity-90">
-              About
-            </a>
-            <a href="#Solutions" className="hover:opacity-90">
-              Solutions/Products
-            </a>
-            <a href="#contact" className="hover:opacity-90">
-              Contact Us
-            </a>
-          </nav>
         </div>
-      </section>
-      <section
-        ref={mobileMenuRef}
-        className={`absolute top-0 bg-black w-3/4 text-3xl flex-col justify-center right-0 origin-top animate-open-menu ${
-          isMobileMenuOpen ? "flex" : "hidden"
-        }`}
-        id="mobile-menu"
-      >
-        <button
-          className="text-7xl py-6 self-end px-6"
-          onClick={toggleMobileMenu}
-        >
-          &times;
-        </button>
-        <nav
-          className="flex flex-col items-center min-h-screen py-8"
-          aria-label="mobile"
-        >
-          <a href="#hero" className="p-3" onClick={closeMobileMenu}>
+        <nav className="hidden md:flex space-x-4 text-lg">
+          <Link href="#hero" className="hover:bg-green-500 rounded-xl p-2">
             Home
-          </a>
-          <a href="#about" className="p-3" onClick={closeMobileMenu}>
-            About
-          </a>
-          <a href="#Solutions" className="p-3" onClick={closeMobileMenu}>
+          </Link>
+          <Link href="#about" className="hover:bg-green-500 rounded-xl p-2">
+            About us
+          </Link>
+          <Link href="#Solutions" className="hover:bg-green-500 rounded-xl p-2">
             Solutions/Products
-          </a>
-          <a href="#contact" className="p-3" onClick={closeMobileMenu}>
-            Contact Us
-          </a>
+          </Link>
+          <Link href="#contact" className="hover:bg-green-500 rounded-xl p-2">
+           Contact Us
+          </Link>
         </nav>
-      </section>
+      </div>
+
+      {isMobileMenuOpen && (
+        <nav className="md:hidden fixed inset-0 bg-black text-white flex flex-col justify-center items-center z-20">
+          <ul className="space-y-8 text-3xl">
+            <li>
+              <Link href="#hero" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="#about" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link href="#Solutions" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+                Solutions/Products
+              </Link>
+            </li>
+            <li>
+              <Link href="#contact" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
