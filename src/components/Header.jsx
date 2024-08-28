@@ -49,22 +49,22 @@ const Header = () => {
         <nav className="md:hidden bg-gray-900">
           <ul className="flex flex-col space-y-4 text-center p-4">
             <li>
-              <Link href="#hero" className="hover:bg-green-500 rounded-xl text-xl p-2" onClick={closeMobileMenu}>
+              <Link href="#hero" className="hover:bg-green-500 rounded-xl text-xl font-bold p-2" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#about" className="hover:bg-green-500 rounded-xl text-xl p-2" onClick={closeMobileMenu}>
+              <Link href="#about" className="hover:bg-green-500 rounded-xl text-xl p-2 font-bold" onClick={closeMobileMenu}>
                 About us
               </Link>
             </li>
             <li>
-              <Link href="#Solutions" className="hover:bg-green-500 rounded-xl text-xl p-2" onClick={closeMobileMenu}>
+              <Link href="#Solutions" className="hover:bg-green-500 rounded-xl text-xl p-2 font-bold" onClick={closeMobileMenu}>
                 Solutions/Products
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="hover:bg-green-500 rounded-xl text-xl p-2" onClick={closeMobileMenu}>
+              <Link href="#contact" className="hover:bg-green-500 rounded-xl text-xl p-2 font-bold" onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>
