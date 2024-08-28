@@ -23,7 +23,7 @@ const Header = () => {
         </h1>
         <div className="md:hidden">
           <button
-            className="text-3xl focus:outline-none text-green-700 hover:text-green-500"
+            className="text-4xl focus:outline-none text-green-700 hover:text-green-500"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
