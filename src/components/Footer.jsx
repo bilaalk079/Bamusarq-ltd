@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer id='footer' className='bg-gray-800 text-xl text-white '>
+    <footer id='footer' className='bg-slate-900 text-xl text-white '>
         <section className='max-w-4xl flex flex-col mx-auto p-4 sm:flex-row sm:justify-between'>
             <address>
             <h2>Bamusarq Solutions ltd.</h2>
