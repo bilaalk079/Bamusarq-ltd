@@ -35,40 +35,40 @@ const Header = () => {
             Home
           </Link>
           <Link href="#about" className="hover:bg-green-500 rounded-xl p-2">
-            About us
+            About
           </Link>
           <Link href="#Solutions" className="hover:bg-green-500 rounded-xl p-2">
             Solutions/Products
           </Link>
           <Link href="#contact" className="hover:bg-green-500 rounded-xl p-2">
-           Contact Us
+            Contact us
           </Link>
         </nav>
       </div>
-
       {isMobileMenuOpen && (
-        <nav className="md:hidden fixed inset-0 bg-black text-white flex flex-col justify-center items-center z-20">
-          <ul className="space-y-8 text-3xl">
+        <nav className="md:hidden bg-gray-900">
+          <ul className="flex flex-col space-y-4 text-center p-4">
             <li>
-              <Link href="#hero" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+              <Link href="#hero" className="hover:bg-green-500 rounded-xl p-2" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#about" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+              <Link href="#about" className="hover:bg-green-500 rounded-xl p-2" onClick={closeMobileMenu}>
                 About us
               </Link>
             </li>
             <li>
-              <Link href="#Solutions" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+              <Link href="#Solutions" className="hover:bg-green-500 rounded-xl p-2" onClick={closeMobileMenu}>
                 Solutions/Products
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="hover:bg-green-500 rounded-xl p-4" onClick={closeMobileMenu}>
+              <Link href="#contact" className="hover:bg-green-500 rounded-xl p-2" onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>
+            
           </ul>
         </nav>
       )}
