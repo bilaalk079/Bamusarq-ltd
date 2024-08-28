@@ -18,7 +18,7 @@ export default function Home() {
               </p>
             </article>
             <Image src="/logo.jpg"
-              className="mt-3"
+              className="mt-10"
               alt="dab"
               width={400}
               height={400}
